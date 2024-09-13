@@ -1,0 +1,5 @@
+export {default as Home} from './Home.jsx'
+export {default as About} from './About.jsx'
+export {default as Publications} from './Publications.jsx'
+export {default as PublicationSingle} from './Publicationsingle.jsx'
+export {default as Contact} from './Contact.jsx'
