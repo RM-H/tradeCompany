@@ -39,6 +39,10 @@ body * {
     min-height: 100dvh;
 }
 
+.imageheight {
+    max-height: 30rem;
+   }
+
 
 .dvhcontainerwithbg {
     min-height: 110dvh;

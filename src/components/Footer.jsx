@@ -14,34 +14,32 @@ const Footer = () => {
 
                   <div className='column is-3  px-6'>
                       <p className=' has-text-weight-bold is-size-5 '>
-                          Quick Acess
+                         دسترسی سریع
                       </p>
 
                       <a href="" className='navbar-item'>
-                          Home
+                          صفحه اصلی
                       </a>
 
                       <a href="" className='navbar-item'>
-                          About
+                          درباره ما
                       </a>
 
                       <a href="" className='navbar-item'>
-                          Publications
+                          مالات
                       </a>
 
                       <a href="" className='navbar-item'>
-                          Contact info
+                         تماس با ما
                       </a>
 
-                      <a href="" className='navbar-item'>
-                          Clinic
-                      </a>
+
                   </div>
 
 
                   <div className='column is-3 px-6'>
                       <p className=' has-text-weight-bold is-size-5'>
-                          Address
+                          آدرس
                       </p>
 
                       <p>
@@ -49,7 +47,7 @@ const Footer = () => {
                       </p>
 
                       <p className=' has-text-weight-bold is-size-5 mt-6'>
-                          call
+                          شماره تلفن
                       </p>
                       <p className='has-text-right' style={{direction: 'ltr'}}>
                           +98 918 883 8083
@@ -64,7 +62,7 @@ const Footer = () => {
 
                   <div className='column is-2'>
                       <p className=' has-text-weight-bold is-size-5'>
-                          Social Media
+                        شبکه های اجتماعی
                       </p>
 
                       <div className='is-flex is-flex-direction-column is-align-items-start is-justify-content-space-between  '>
@@ -95,8 +93,10 @@ const Footer = () => {
 
               <div className='bgclrone py-2 '>
                   <p className='has-text-white has-text-centered '>
-                    All rights reserved.
+                  طراحی شده توسط :
+                      <a className='has-text-white' href="https://rhasani.com/" target='_blank' rel='nofollow'> رامین حسنی</a>
                   </p>
+                  
               </div>
 
 

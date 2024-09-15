@@ -41,7 +41,7 @@ function Navbar() {
         <AppBar  color='secondary' position="fixed" sx={{ minHeight:'6rem'  , justifyContent:'center', backdropFilter:'blur(0.3rem)' }}>
             <Container maxWidth="xl" >
                 <Toolbar disableGutters>
-                    <img className='is-hidden-mobile' src="/images/logo-removebg-preview.png" alt="" style={{maxWidth:'6rem'}}/>
+                    <img className='is-hidden-mobile' src="/images/logo-removebg-preview.png" alt="" style={{maxWidth:'9rem'}}/>
 
                     <Typography
                         variant="h6"
@@ -58,7 +58,7 @@ function Navbar() {
                             textDecoration: 'none',
                         }}
                     >
-                        بازرگانی خیرالله نیا
+                        بازرگانی خیراله نیا
                     </Typography>
 
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -89,11 +89,11 @@ function Navbar() {
                             sx={{ display: { xs: 'block', md: 'none' } }}
                         >
 
-                                <MenuItem onClick={handleCloseNavMenu}>
+                                <MenuItem  onClick={handleCloseNavMenu}>
                                     <Link to='/'>
 
 
-                                        <Typography sx={{ textAlign: 'center' }}>خانه </Typography>
+                                        <Typography  sx={{ textAlign: 'center' }}>خانه </Typography>
                                     </Link>
                                 </MenuItem>
 
@@ -131,20 +131,20 @@ function Navbar() {
                             mr: 2,
                             display: { xs: 'flex', md: 'none' },
                             flexGrow: 1,
-                            fontFamily: 'monospace',
-                            fontWeight: 700,
-                            letterSpacing: '.3rem',
+
+
                             color: 'inherit',
                             textDecoration: 'none',
                         }}
                     >
-                        Dr. Sattarzadeh
+                       بازرگانی خیراله نیا
                     </Typography>
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } , justifyContent:'left' }}>
 
 
                         <Link to='/'>
                             <Button
+                                className='underline'
 
                                 onClick={handleCloseNavMenu}
                                 sx={{ my: 2, color: 'white', display: 'block' }}
@@ -158,6 +158,7 @@ function Navbar() {
 
                         <Link to='/about'>
                             <Button
+                                className='underline'
 
                                 onClick={handleCloseNavMenu}
                                 sx={{ my: 2, color: 'white', display: 'block' }}
@@ -179,6 +180,7 @@ function Navbar() {
 
 
                             <Button
+                                className='underline'
 
                                 onClick={handleCloseNavMenu}
                                 sx={{ my: 2, color: 'white', display: 'block' }}
@@ -191,6 +193,7 @@ function Navbar() {
 
                         <Link to='/contact'>
                             <Button
+                                className='underline'
 
                                 onClick={handleCloseNavMenu}
                                 sx={{ my: 2, color: 'white', display: 'block' }}

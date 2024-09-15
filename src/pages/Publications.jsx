@@ -1,11 +1,19 @@
 import {Link} from "react-router-dom";
 import {Button} from '@mui/material'
+import {Blank, scrolltop} from "../components/index.js";
+import {useEffect} from "react";
 
 
 const Publications = () => {
+
+    useEffect(() => {
+        scrolltop()
+    }, []);
     
     
     const Publicationscard = ({title}) => {
+
+
       return(
           <>
           <div className='column is-4 p-3'>
@@ -17,7 +25,7 @@ const Publications = () => {
               <div className='borderclrtwo'>
                   <img
                       src="https://images.ctfassets.net/zlnfaxb2lcqx/2y9FIwBPHOtfH1Sj04Syyt/f12f294b97983e97e3435c90c01d32cf/global-comms-2023_2.jpg?fm=webp&w=1080&q=90"
-                      alt="" className='borderrad1'/>
+                      alt="" className='borderrad1 imageheight'/>
 
                   <h3 className='has-text-centered has-text-weight-bold'>
                       {title}
@@ -55,9 +63,11 @@ const Publications = () => {
     return (
         <>
             <div className='columns is-multiline container'>
+
+                <Blank/>
                 <div className='column is-12'>
                   <h1 className='has-text-centered is-size-1'>
-                       Dr. Sattarzadeh Publications
+                      مقالات و مطالب مفید
                   </h1>
               </div>
 
