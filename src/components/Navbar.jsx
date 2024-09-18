@@ -17,7 +17,6 @@ import {blueGrey} from '@mui/material/colors'
 import {Link} from 'react-router-dom'
 
 
-
 function Navbar() {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
     const [anchorElUser, setAnchorElUser] = React.useState(null);
@@ -38,30 +37,38 @@ function Navbar() {
     };
 
     return (
-        <AppBar  color='secondary' position="fixed" sx={{ minHeight:'6rem'  , justifyContent:'center', backdropFilter:'blur(0.3rem)' }}>
-            <Container maxWidth="xl" >
+        <AppBar color='fourth' position="fixed"
+                sx={{minHeight: '6rem', justifyContent: 'center', backdropFilter: 'blur(0.3rem)'}}>
+            <Container maxWidth="xl">
                 <Toolbar disableGutters>
-                    <img className='is-hidden-mobile' src="/images/logo-removebg-preview.png" alt="" style={{maxWidth:'9rem'}}/>
 
-                    <Typography
-                        variant="h6"
-                        noWrap
-                        component="a"
+                    <Link to='/'>
 
-                        sx={{
-                            mr: 2,
-                            display: { xs: 'none', md: 'flex' },
 
-                            fontWeight: 700,
+                        <img className='is-hidden-mobile' src="/images/logo-removebg-preview.webp" alt=""
+                             style={{maxWidth: '9rem'}}/>
+                    </Link>
 
-                            color: 'inherit',
-                            textDecoration: 'none',
-                        }}
-                    >
-                        بازرگانی خیراله نیا
-                    </Typography>
+                        <Typography
+                            variant="h6"
+                            noWrap
+                            component="a"
 
-                    <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+                            sx={{
+                                mr: 2,
+                                display: {xs: 'none', md: 'flex'},
+
+                                fontWeight: 700,
+
+                                color: 'inherit',
+                                textDecoration: 'none',
+                            }}
+                        >
+                            بازرگانی خیراله نیا
+                        </Typography>
+
+
+                    <Box sx={{flexGrow: 1, display: {xs: 'flex', md: 'none'}}}>
                         <IconButton
                             size="large"
                             aria-label="account of current user"
@@ -86,37 +93,36 @@ function Navbar() {
                             }}
                             open={Boolean(anchorElNav)}
                             onClose={handleCloseNavMenu}
-                            sx={{ display: { xs: 'block', md: 'none' } }}
+                            sx={{display: {xs: 'block', md: 'none'}}}
                         >
 
-                                <MenuItem  onClick={handleCloseNavMenu}>
-                                    <Link to='/'>
+                            <MenuItem onClick={handleCloseNavMenu}>
+                                <Link to='/'>
 
 
-                                        <Typography  sx={{ textAlign: 'center' }}>خانه </Typography>
-                                    </Link>
-                                </MenuItem>
+                                    <Typography sx={{textAlign: 'center'}}>خانه </Typography>
+                                </Link>
+                            </MenuItem>
 
                             <MenuItem onClick={handleCloseNavMenu}>
                                 <Link to='/about'>
 
-                                    <Typography sx={{ textAlign: 'center' }}>درباره ما</Typography>
+                                    <Typography sx={{textAlign: 'center'}}>درباره ما</Typography>
                                 </Link>
                             </MenuItem>
 
                             <MenuItem onClick={handleCloseNavMenu}>
                                 <Link to='/publications'>
 
-                                    <Typography sx={{ textAlign: 'center' }}>مقالات</Typography>
+                                    <Typography sx={{textAlign: 'center'}}>مقالات</Typography>
                                 </Link>
                             </MenuItem>
                             <MenuItem onClick={handleCloseNavMenu}>
                                 <Link to='/contact'>
 
-                                    <Typography sx={{ textAlign: 'center' }}> اطلاعات تماس</Typography>
+                                    <Typography sx={{textAlign: 'center'}}> اطلاعات تماس</Typography>
                                 </Link>
                             </MenuItem>
-
 
 
                         </Menu>
@@ -129,7 +135,7 @@ function Navbar() {
                         href="#app-bar-with-responsive-menu"
                         sx={{
                             mr: 2,
-                            display: { xs: 'flex', md: 'none' },
+                            display: {xs: 'flex', md: 'none'},
                             flexGrow: 1,
 
 
@@ -137,9 +143,9 @@ function Navbar() {
                             textDecoration: 'none',
                         }}
                     >
-                       بازرگانی خیراله نیا
+                        بازرگانی خیراله نیا
                     </Typography>
-                    <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } , justifyContent:'left' }}>
+                    <Box sx={{flexGrow: 1, display: {xs: 'none', md: 'flex'}, justifyContent: 'left'}}>
 
 
                         <Link to='/'>
@@ -147,7 +153,7 @@ function Navbar() {
                                 className='underline'
 
                                 onClick={handleCloseNavMenu}
-                                sx={{ my: 2, color: 'white', display: 'block' }}
+                                sx={{my: 2, color: 'white', display: 'block'}}
                             >
                                 صفحه اصلی
                             </Button>
@@ -155,25 +161,18 @@ function Navbar() {
                         </Link>
 
 
-
                         <Link to='/about'>
                             <Button
                                 className='underline'
 
                                 onClick={handleCloseNavMenu}
-                                sx={{ my: 2, color: 'white', display: 'block' }}
+                                sx={{my: 2, color: 'white', display: 'block'}}
                             >
                                 درباره ما
                             </Button>
 
 
-
                         </Link>
-
-
-
-
-
 
 
                         <Link to='/publications'>
@@ -183,12 +182,11 @@ function Navbar() {
                                 className='underline'
 
                                 onClick={handleCloseNavMenu}
-                                sx={{ my: 2, color: 'white', display: 'block' }}
+                                sx={{my: 2, color: 'white', display: 'block'}}
                             >
                                 مقالات
                             </Button>
                         </Link>
-
 
 
                         <Link to='/contact'>
@@ -196,21 +194,12 @@ function Navbar() {
                                 className='underline'
 
                                 onClick={handleCloseNavMenu}
-                                sx={{ my: 2, color: 'white', display: 'block' }}
+                                sx={{my: 2, color: 'white', display: 'block'}}
                             >
-                                 تماس با ما
+                                تماس با ما
                             </Button>
 
                         </Link>
-
-
-
-
-
-
-
-
-
 
 
                     </Box>
@@ -220,4 +209,5 @@ function Navbar() {
         </AppBar>
     );
 }
+
 export default Navbar;

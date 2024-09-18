@@ -84,7 +84,7 @@ const Home = () => {
                         <SwiperSlide>
                             <div
                                 className='bgclrthree borderrad2 is-flex is-flex-direction-column is-align-items-center p-3'>
-                                <img src="/images/cargo.png" alt="" style={{width: '6rem'}}/>
+                                <img src="/images/cargo.webp" alt="" style={{width: '6rem'}}/>
                                 <p className='has-text-weight-bold is-size-5'>
 
                                     کریر و فورواردر
@@ -112,7 +112,7 @@ const Home = () => {
                         <SwiperSlide>
                             <div
                                 className='bgclrthree borderrad2 is-flex is-flex-direction-column is-align-items-center p-3'>
-                                <img src="/images/trade.png" alt="" style={{width: '6rem'}}/>
+                                <img src="/images/trade.webp" alt="" style={{width: '6rem'}}/>
                                 <p className='has-text-weight-bold is-size-5'>
                                     صادرات و واردات
                                 </p>
@@ -123,9 +123,34 @@ const Home = () => {
                         <SwiperSlide>
                             <div
                                 className='bgclrthree borderrad2 is-flex is-flex-direction-column is-align-items-center p-3'>
-                                <img src="/images/legal.png" alt="" style={{width: '6rem'}}/>
+                                <img src="/images/legal.webp" alt="" style={{width: '6rem'}}/>
                                 <p className='has-text-weight-bold is-size-5'>
                                     مشاوره حقوقی
+                                </p>
+
+                            </div>
+
+                        </SwiperSlide>
+
+
+                        <SwiperSlide>
+                            <div
+                                className='bgclrthree borderrad2 is-flex is-flex-direction-column is-align-items-center p-3'>
+                                <img src="/images/legal.webp" alt="" style={{width: '6rem'}}/>
+                                <p className='has-text-weight-bold is-size-5'>
+                                  مشاوره بانکی و اعتبارات اسنادی
+                                </p>
+
+                            </div>
+
+                        </SwiperSlide>
+
+                        <SwiperSlide>
+                            <div
+                                className='bgclrthree borderrad2 is-flex is-flex-direction-column is-align-items-center p-3'>
+                                <img src="/images/legal.webp" alt="" style={{width: '6rem'}}/>
+                                <p className='has-text-weight-bold is-size-5'>
+                                   شرکت در پرونده های  قاچاق
                                 </p>
 
                             </div>
@@ -155,7 +180,7 @@ const Home = () => {
 
                         <div className='column is-6 has-text-centered'>
                             <img
-                                src="/images/import.jpg"
+                                src="/images/import.webp"
                                 className='borderrad1 imageheight' alt=""/>
 
                         </div>
@@ -201,7 +226,7 @@ const Home = () => {
 
                         <div className='column is-6 has-text-centered'>
                             <img
-                                src="/images/legal.jpg"
+                                src="/images/legal%20(2).webp"
                                 className='borderrad1 imageheight' alt=""/>
 
                         </div>
